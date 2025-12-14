@@ -1,0 +1,29 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Friends" %>
+<br>
+<h2>Welcome, <%= current_user.email %></h2>
+
+<br> <br>
+
+<%= button_to "Logout",
+      destroy_user_session_path,
+      method: :delete,
+      class: "btn btn-danger" %>
+<br><br>
+<%= link_to "Create New friend", new_friend_path %>
+
+<br><br>
+
+<h1>All Friends</h1>
+
+<div id="friends">
+  <% @friends.each do |friend| %>
+    <%= render friend %>
+    <p>
+      <%= link_to "Show this friend", friend %>
+    </p>
+  <% end %>
+</div>
+
+
