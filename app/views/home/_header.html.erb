@@ -1,32 +1,29 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  
-  <%# 1. Use link_to for the Brand/App Name %>
-  <%= link_to "Friend App", root_path, class: "navbar-brand" %>
+<nav class="navbar navbar-light bg-light mb-3">
+  <div class="container">
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <%= link_to "Friends App", root_path, class: "navbar-brand" %>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      
-      <%# 2. Use link_to for all Navigation Items %>
-      <li class="nav-item active">
-        <%= link_to "Home", root_path, class: "nav-link" %>
-      </li>
+   <div class="ml-auto">
+      <% if user_signed_in? %>
+        <%= link_to "Create Friend",
+            new_friend_path,
+            class: "btn btn-primary mr-2" %>
 
-      <li class="nav-item">
-        <%= link_to "Link", "#", class: "nav-link" %>
-      </li>
-      
-    </ul>
-    
-    <%# Simple Search Form %>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <%# Changed btn-outline-success to btn-outline-light for visibility on dark background %>
-      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-    </form>
-    
+        <%= button_to "Logout",
+            destroy_user_session_path,
+            method: :delete,
+            class: "btn btn-danger",
+            form: { data: { turbo: true } } %>
+      <% else %>
+        <%= link_to "Login",
+            new_user_session_path,
+            class: "btn btn-success mr-2" %>
+
+        <%= link_to "Sign up",
+            new_user_registration_path,
+            class: "btn btn-outline-primary" %>
+      <% end %>
+    </div>
+
   </div>
 </nav>

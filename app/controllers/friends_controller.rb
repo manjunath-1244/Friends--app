@@ -2,7 +2,11 @@ class FriendsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @friends = current_user.friends
+    if current_user.admin?
+      @friends = Friend.all.page(params[:page]).per(10)
+    else
+      @friends = current_user.friends.page(params[:page]).per(10)
+    end
   end
 
   def show

@@ -1,29 +1,36 @@
-<p style="color: green"><%= notice %></p>
+<h2>My Friends</h2>
 
-<% content_for :title, "Friends" %>
-<br>
-<h2>Welcome, <%= current_user.email %></h2>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Twitter</th>
+      <th>Action</th>
+    </tr>
+  </thead>
 
-<br> <br>
-
-<%= button_to "Logout",
-      destroy_user_session_path,
-      method: :delete,
-      class: "btn btn-danger" %>
-<br><br>
-<%= link_to "Create New friend", new_friend_path %>
-
-<br><br>
-
-<h1>All Friends</h1>
-
-<div id="friends">
-  <% @friends.each do |friend| %>
-    <%= render friend %>
-    <p>
-      <%= link_to "Show this friend", friend %>
-    </p>
-  <% end %>
+  <tbody>
+    <% @friends.each do |friend| %>
+      <tr id="<%= dom_id(friend) %>">
+        <td><%= friend.first_name %></td>
+        <td><%= friend.last_name %></td>
+        <td><%= friend.email %></td>
+        <td><%= friend.phone %></td>
+        <td><%= friend.twitter %></td>
+        <td>
+          <!--<%= link_to "Show", friend, class: "btn btn-sm btn-primary" %>-->
+          <%= link_to "Edit", edit_friend_path(friend), class: "btn btn-sm btn-warning" %>
+          <%= link_to "Delete", friend,
+              data: { turbo_method: :delete, turbo_confirm: "Are you sure?" },
+              class: "btn btn-sm btn-danger" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<div class="mt-3">
+  <%= paginate @friends %>
 </div>
-
-

@@ -1,28 +1,25 @@
-<table class="table">
-  <tbody id="<%= dom_id(friend) %>">
+<table class="table table-bordered">
+  <thead>
     <tr>
       <th>First name</th>
-      <td><%= friend.first_name %></td>
-    </tr>
-
-    <tr>
       <th>Last name</th>
-      <td><%= friend.last_name %></td>
-    </tr>
-
-    <tr>
       <th>Email</th>
-      <td><%= friend.email %></td>
-    </tr>
-
-    <tr>
       <th>Phone</th>
-      <td><%= friend.phone %></td>
-    </tr>
-
-    <tr>
       <th>Twitter</th>
+      <!--<th>Action</th>-->
+    </tr>
+  </thead>
+
+  <tbody id="<%= dom_id(friend) %>">
+    <tr>
+      <td><%= friend.first_name %></td>
+      <td><%= friend.last_name %></td>
+      <td><%= friend.email %></td>
+      <td><%= friend.phone %></td>
       <td><%= friend.twitter %></td>
+     <!-- <td>
+        <%= link_to "Show this friend", friend_path(friend), class: "btn btn-sm btn-primary" %>
+      </td>-->
     </tr>
   </tbody>
 </table>
