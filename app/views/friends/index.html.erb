@@ -1,5 +1,16 @@
 <h2>My Friends</h2>
+<%= form_with url: friends_path, method: :get, local: true, class: "mb-3" do %>
+  <div class="input-group">
+    <%= text_field_tag :query,
+          params[:query],
+          placeholder: "Search by name or email",
+          class: "form-control" %>
 
+    <button class="btn btn-primary" type="submit">
+      Search
+    </button>
+  </div>
+<% end %>
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
@@ -8,6 +19,7 @@
       <th>Email</th>
       <th>Phone</th>
       <th>Twitter</th>
+      <th>Image</th> 
       <th>Action</th>
     </tr>
   </thead>
@@ -20,6 +32,16 @@
         <td><%= friend.email %></td>
         <td><%= friend.phone %></td>
         <td><%= friend.twitter %></td>
+        <td>
+        <% if friend.avatar.attached? %>
+          <%= image_tag url_for(friend.avatar),
+                width: 50,
+                height: 50,
+                class: "rounded-circle" %>
+        <% else %>
+          No Image
+        <% end %>
+      </td>
         <td>
           <!--<%= link_to "Show", friend, class: "btn btn-sm btn-primary" %>-->
           <%= link_to "Edit", edit_friend_path(friend), class: "btn btn-sm btn-warning" %>

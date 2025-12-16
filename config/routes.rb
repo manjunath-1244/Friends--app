@@ -18,6 +18,3 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 end
-
-# git hub token 
-# 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

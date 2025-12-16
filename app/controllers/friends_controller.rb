@@ -1,16 +1,29 @@
 class FriendsController < ApplicationController
   before_action :authenticate_user!
+  before_action :set_friend, only: [:show, :edit, :update, :destroy]
 
   def index
+  @friends =
     if current_user.admin?
-      @friends = Friend.all.page(params[:page]).per(10)
+      Friend.all
     else
-      @friends = current_user.friends.page(params[:page]).per(10)
+      current_user.friends
     end
+
+  if params[:query].present?
+    search = "%#{params[:query]}%"
+    @friends = @friends.where(
+      "first_name ILIKE ? OR last_name ILIKE ? OR email ILIKE ?",
+      search, search, search
+    )
   end
 
+  @friends = @friends.page(params[:page]).per(10)
+end
+
+
   def show
-    @friend = current_user.friends.find(params[:id])
+    # @friend is already set by set_friend
   end
 
   def new
@@ -28,12 +41,10 @@ class FriendsController < ApplicationController
   end
 
   def edit
-    @friend = current_user.friends.find(params[:id])
+    # @friend is already set by set_friend
   end
 
   def update
-    @friend = current_user.friends.find(params[:id])
-
     if @friend.update(friend_params)
       redirect_to friends_path, notice: "Friend updated."
     else
@@ -42,14 +53,28 @@ class FriendsController < ApplicationController
   end
 
   def destroy
-    @friend = current_user.friends.find(params[:id])
     @friend.destroy
     redirect_to friends_path, notice: "Friend deleted."
   end
 
   private
 
+  def set_friend
+    @friend = if current_user.admin?
+                Friend.find(params[:id])
+              else
+                current_user.friends.find(params[:id])
+              end
+  end
+
   def friend_params
-    params.require(:friend).permit(:first_name, :last_name, :email, :phone, :twitter)
+    params.require(:friend).permit(
+      :first_name,
+      :last_name,
+      :email,
+      :phone,
+      :twitter,
+      :avatar
+    )
   end
 end

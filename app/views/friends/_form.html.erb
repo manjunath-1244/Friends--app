@@ -1,8 +1,7 @@
-<%= form_with(model: friend) do |form| %>
+<%= form_with(model: friend, html: { multipart: true }) do |form| %>
   <% if friend.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(friend.errors.count, "error") %> prohibited this friend from being saved:</h2>
-
       <ul>
         <% friend.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -12,40 +11,36 @@
   <% end %>
 
   <div>
-    <%= form.label :first_name, style: "display: block" %>
+    <%= form.label :first_name %>
     <%= form.text_field :first_name %>
   </div>
 
   <div>
-    <%= form.label :last_name, style: "display: block" %>
+    <%= form.label :last_name %>
     <%= form.text_field :last_name %>
   </div>
 
   <div>
-    <%= form.label :email, style: "display: block" %>
+    <%= form.label :email %>
     <%= form.email_field :email %>
   </div>
 
   <div>
-    <%= form.label :phone, style: "display: block" %>
+    <%= form.label :phone %>
     <%= form.text_field :phone %>
   </div>
 
   <div>
-    <%= form.label :twitter, style: "display: block" %>
+    <%= form.label :twitter %>
     <%= form.text_field :twitter %>
-    <!--  <%= form.text_field :twitter,
-        placeholder: "@username",
-        pattern: "^@?[A-Za-z0-9_]{1,15}$",
-        title: "Twitter username must be 1–15 characters and contain only letters, numbers, or underscores"
-  %> -->
   </div>
-<!--
+
+  <!-- IMAGE UPLOAD FIELD -->
   <div>
-    <%= form.label :user_id, style: "display: block" %>
-    <%= form.text_field :user_id %>
+    <%= form.label :avatar, "Profile Image" %>
+    <%= form.file_field :avatar %>
   </div>
--->
+
   <div>
     <%= form.submit %>
   </div>
