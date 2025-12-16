@@ -1,29 +1,37 @@
 <nav class="navbar navbar-light bg-light mb-3">
   <div class="container">
-
     <%= link_to "Friends App", root_path, class: "navbar-brand" %>
 
-   <div class="ml-auto">
+    <div class="ms-auto d-flex align-items-center">
       <% if user_signed_in? %>
+
+        <% if current_user.admin? %>
+          <%= link_to "Admin Dashboard",
+                admin_dashboard_path,
+                class: "nav-link me-3 fw-semibold text-danger" %>
+        <% end %>
+
         <%= link_to "Create Friend",
-            new_friend_path,
-            class: "btn btn-primary mr-2" %>
+              new_friend_path,
+              class: "btn btn-primary me-2" %>
 
         <%= button_to "Logout",
-            destroy_user_session_path,
-            method: :delete,
-            class: "btn btn-danger",
-            form: { data: { turbo: true } } %>
+              destroy_user_session_path,
+              method: :delete,
+              data: { turbo: false },
+              class: "btn btn-danger" %>
+
       <% else %>
+
         <%= link_to "Login",
-            new_user_session_path,
-            class: "btn btn-success mr-2" %>
+              new_user_session_path,
+              class: "btn btn-success me-2" %>
 
         <%= link_to "Sign up",
-            new_user_registration_path,
-            class: "btn btn-outline-primary" %>
+              new_user_registration_path,
+              class: "btn btn-outline-primary" %>
+
       <% end %>
     </div>
-
   </div>
 </nav>

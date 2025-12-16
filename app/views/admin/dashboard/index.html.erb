@@ -1,0 +1,40 @@
+<h2>Admin Dashboard</h2>
+
+<div class="row mb-4">
+  <div class="col-md-4">
+    <div class="card text-white bg-primary mb-3">
+      <div class="card-body">
+        <h5>Total Users</h5>
+        <h3><%= @total_users %></h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card text-white bg-success mb-3">
+      <div class="card-body">
+        <h5>Total Friends</h5>
+        <h3><%= @total_friends %></h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h4>Friends Per User</h4>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>User Email</th>
+      <th>Friends Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @friends_per_user.each do |user| %>
+      <tr>
+        <td><%= user.email %></td>
+        <td><%= user.friends_count %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -59,6 +59,9 @@ end
 
   private
 
+
+
+  
   def set_friend
     @friend = if current_user.admin?
                 Friend.find(params[:id])
