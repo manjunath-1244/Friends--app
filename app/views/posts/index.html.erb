@@ -1,0 +1,23 @@
+<h2>Posts</h2>
+
+<%= link_to "Create Post", new_post_path, class: "btn btn-success mb-3" %>
+
+<% @posts.each do |post| %>
+  <div class="card mb-3">
+    <div class="card-body">
+      <strong><%= post.user.email %></strong>
+      <p><%= post.content %></p>
+
+      <%= link_to "View", post_path(post), class: "btn btn-sm btn-primary" %>
+
+     <% if current_user == post.user || current_user.admin? %>
+ <!-- <%= button_to "Delete",
+      post_path(post),
+      method: :delete,
+      data: { confirm: "Delete this post?" },
+      class: "btn btn-danger btn-sm" %>
+<% end %>            
+
+    </div>
+  </div>
+<% end %>

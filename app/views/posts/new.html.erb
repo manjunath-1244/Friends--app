@@ -1,0 +1,14 @@
+<h2>Create New Post</h2>
+
+<%= form_with model: @post do |f| %>
+  <div class="mb-3">
+    <%= f.label :content, "Post Content" %>
+    <%= f.text_area :content,
+          rows: 4,
+          class: "form-control",
+          placeholder: "What's on your mind?" %>
+  </div>
+
+  <%= f.submit "Create Post", class: "btn btn-primary" %>
+  <%= link_to "Back", posts_path, class: "btn btn-secondary ms-2" %>
+<% end %>

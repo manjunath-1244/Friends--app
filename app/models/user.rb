@@ -6,7 +6,23 @@ class User < ApplicationRecord
 
   has_many :friends, dependent: :destroy
 
+  has_many :posts, dependent: :destroy
+  has_many :comments, dependent: :destroy
+
+#   def friends_with?(other_user)
+#   friends.exists?(id: other_user.id)
+# end
+
+
+  def admin?
+    role == "admin"
+  end
+
+
   
+  def full_name
+    first_name.presence || email
+  end
 
   validates :email,
     presence: true,
@@ -14,7 +30,6 @@ class User < ApplicationRecord
       with: URI::MailTo::EMAIL_REGEXP,
       message: "is not a valid email"
     }
-
     # validates :twitter,
     # allow_blank: true,
     # format: {
@@ -22,7 +37,5 @@ class User < ApplicationRecord
     #   message: "must be a valid Twitter username"
     # }
 
-  def admin?
-    role == "admin"
-  end
+  
 end

@@ -5,6 +5,11 @@ Rails.application.routes.draw do
   namespace :admin do
     get "dashboard", to: "dashboard#index"
   end
+
+  resources :posts do
+    resources :comments, only: [:create, :edit, :update, :destroy]
+  end
+
   devise_for :users
   resources :friends
   

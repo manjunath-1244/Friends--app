@@ -2,6 +2,12 @@ class FriendsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_friend, only: [:show, :edit, :update, :destroy]
 
+
+  
+
+
+  
+
   def index
   @friends =
     if current_user.admin?
@@ -19,7 +25,7 @@ class FriendsController < ApplicationController
   end
 
   @friends = @friends.page(params[:page]).per(10)
-end
+  end
 
 
   def show
@@ -31,9 +37,11 @@ end
   end
 
   def create
+    
     @friend = current_user.friends.build(friend_params)
 
     if @friend.save
+      
       redirect_to friends_path, notice: "Friend added successfully."
     else
       render :new, status: :unprocessable_entity
@@ -59,8 +67,7 @@ end
 
   private
 
-
-
+  
   
   def set_friend
     @friend = if current_user.admin?
