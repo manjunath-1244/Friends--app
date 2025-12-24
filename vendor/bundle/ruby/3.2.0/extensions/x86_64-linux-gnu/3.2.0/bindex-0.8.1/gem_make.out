@@ -3,16 +3,16 @@ current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/
 creating Makefile
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-tt2k74 sitelibdir\=./.gem.20251212-20418-tt2k74 clean
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-ohm3on sitelibdir\=./.gem.20251224-47618-ohm3on clean
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-tt2k74 sitelibdir\=./.gem.20251212-20418-tt2k74
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-ohm3on sitelibdir\=./.gem.20251224-47618-ohm3on
 compiling cruby.c
 linking shared-object skiptrace/internal/cruby.so
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-tt2k74 sitelibdir\=./.gem.20251212-20418-tt2k74 install
-/usr/bin/install -c -m 0755 cruby.so ./.gem.20251212-20418-tt2k74/skiptrace/internal
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-ohm3on sitelibdir\=./.gem.20251224-47618-ohm3on install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20251224-47618-ohm3on/skiptrace/internal
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-tt2k74 sitelibdir\=./.gem.20251212-20418-tt2k74 clean
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-ohm3on sitelibdir\=./.gem.20251224-47618-ohm3on clean

@@ -23,18 +23,18 @@ checking for SSL_get1_peer_certificate() in openssl/ssl.h... yes
 creating Makefile
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/puma-7.1.0/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-zwp0iv sitelibdir\=./.gem.20251212-20418-zwp0iv clean
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-6ty1r sitelibdir\=./.gem.20251224-47618-6ty1r clean
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/puma-7.1.0/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-zwp0iv sitelibdir\=./.gem.20251212-20418-zwp0iv
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-6ty1r sitelibdir\=./.gem.20251224-47618-6ty1r
 compiling http11_parser.c
 compiling mini_ssl.c
 compiling puma_http11.c
 linking shared-object puma/puma_http11.so
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/puma-7.1.0/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-zwp0iv sitelibdir\=./.gem.20251212-20418-zwp0iv install
-/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20251212-20418-zwp0iv/puma
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-6ty1r sitelibdir\=./.gem.20251224-47618-6ty1r install
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20251224-47618-6ty1r/puma
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/puma-7.1.0/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-zwp0iv sitelibdir\=./.gem.20251212-20418-zwp0iv clean
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-6ty1r sitelibdir\=./.gem.20251224-47618-6ty1r clean

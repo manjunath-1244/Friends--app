@@ -10,16 +10,16 @@ checking for cpuid.h... yes
 creating Makefile
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/json-2.18.0/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-7124la sitelibdir\=./.gem.20251212-20418-7124la clean
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-kls8kf sitelibdir\=./.gem.20251224-47618-kls8kf clean
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/json-2.18.0/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-7124la sitelibdir\=./.gem.20251212-20418-7124la
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-kls8kf sitelibdir\=./.gem.20251224-47618-kls8kf
 compiling parser.c
 linking shared-object json/ext/parser.so
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/json-2.18.0/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-7124la sitelibdir\=./.gem.20251212-20418-7124la install
-/usr/bin/install -c -m 0755 parser.so ./.gem.20251212-20418-7124la/json/ext
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-kls8kf sitelibdir\=./.gem.20251224-47618-kls8kf install
+/usr/bin/install -c -m 0755 parser.so ./.gem.20251224-47618-kls8kf/json/ext
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/json-2.18.0/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-7124la sitelibdir\=./.gem.20251212-20418-7124la clean
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-kls8kf sitelibdir\=./.gem.20251224-47618-kls8kf clean

@@ -7,16 +7,16 @@ checking for whether -std=c99 is accepted as CFLAGS... yes
 creating Makefile
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.19.0/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-78uopa sitelibdir\=./.gem.20251212-20418-78uopa clean
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-now2jr sitelibdir\=./.gem.20251224-47618-now2jr clean
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.19.0/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-78uopa sitelibdir\=./.gem.20251212-20418-78uopa
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-now2jr sitelibdir\=./.gem.20251224-47618-now2jr
 compiling bootsnap.c
 linking shared-object bootsnap/bootsnap.so
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.19.0/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-78uopa sitelibdir\=./.gem.20251212-20418-78uopa install
-/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20251212-20418-78uopa/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-now2jr sitelibdir\=./.gem.20251224-47618-now2jr install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20251224-47618-now2jr/bootsnap
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.19.0/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-78uopa sitelibdir\=./.gem.20251212-20418-78uopa clean
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-now2jr sitelibdir\=./.gem.20251224-47618-now2jr clean

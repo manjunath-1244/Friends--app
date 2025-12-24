@@ -6,10 +6,10 @@ checking for whether -fvisibility=hidden is accepted as CFLAGS... yes
 creating Makefile
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/prism-1.6.0/ext/prism
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-dx3ywq sitelibdir\=./.gem.20251212-20418-dx3ywq clean
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-gqdc7d sitelibdir\=./.gem.20251224-47618-gqdc7d clean
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/prism-1.6.0/ext/prism
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-dx3ywq sitelibdir\=./.gem.20251212-20418-dx3ywq
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-gqdc7d sitelibdir\=./.gem.20251224-47618-gqdc7d
 compiling api_node.c
 compiling api_pack.c
 compiling ./../../src/diagnostic.c
@@ -37,8 +37,8 @@ compiling ./../../src/token_type.c
 linking shared-object prism/prism.so
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/prism-1.6.0/ext/prism
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-dx3ywq sitelibdir\=./.gem.20251212-20418-dx3ywq install
-/usr/bin/install -c -m 0755 prism.so ./.gem.20251212-20418-dx3ywq/prism
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-gqdc7d sitelibdir\=./.gem.20251224-47618-gqdc7d install
+/usr/bin/install -c -m 0755 prism.so ./.gem.20251224-47618-gqdc7d/prism
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/prism-1.6.0/ext/prism
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-dx3ywq sitelibdir\=./.gem.20251212-20418-dx3ywq clean
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-gqdc7d sitelibdir\=./.gem.20251224-47618-gqdc7d clean

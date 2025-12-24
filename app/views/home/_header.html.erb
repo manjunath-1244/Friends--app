@@ -11,6 +11,8 @@
                 class: "nav-link me-3 fw-semibold text-danger" %>
         <% end %>
 
+        <h6> Welcome, <%= current_user.email %> </h6>
+
         <%= link_to "Create Friend",
               new_friend_path,
               class: "btn btn-primary me-2" %>

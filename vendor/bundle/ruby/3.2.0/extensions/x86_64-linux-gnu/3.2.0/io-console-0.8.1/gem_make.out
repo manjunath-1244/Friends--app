@@ -16,16 +16,16 @@ checking for ttyname_r()... yes
 creating Makefile
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/io-console-0.8.1/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-uar6l9 sitelibdir\=./.gem.20251212-20418-uar6l9 clean
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-s1476f sitelibdir\=./.gem.20251224-47618-s1476f clean
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/io-console-0.8.1/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-uar6l9 sitelibdir\=./.gem.20251212-20418-uar6l9
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-s1476f sitelibdir\=./.gem.20251224-47618-s1476f
 compiling console.c
 linking shared-object io/console.so
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/io-console-0.8.1/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-uar6l9 sitelibdir\=./.gem.20251212-20418-uar6l9 install
-/usr/bin/install -c -m 0755 console.so ./.gem.20251212-20418-uar6l9/io
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-s1476f sitelibdir\=./.gem.20251224-47618-s1476f install
+/usr/bin/install -c -m 0755 console.so ./.gem.20251224-47618-s1476f/io
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/io-console-0.8.1/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-uar6l9 sitelibdir\=./.gem.20251212-20418-uar6l9 clean
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-s1476f sitelibdir\=./.gem.20251224-47618-s1476f clean

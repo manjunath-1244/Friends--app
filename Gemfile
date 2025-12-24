@@ -2,9 +2,11 @@ source "https://rubygems.org"
 gem 'devise'
 
 gem "kaminari"
-# gem "pry-rails"
-#   gem "letter_opener"
+gem "pry-rails"
+# group :development do
+#   gem 'letter_opener'
 # end
+gem "whenever", require: false
 group :development, :test do
   gem 'dotenv-rails'
 end

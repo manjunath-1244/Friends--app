@@ -3,17 +3,17 @@ current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/
 creating Makefile
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/debug-1.11.0/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-ogak65 sitelibdir\=./.gem.20251212-20418-ogak65 clean
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-2hvtmy sitelibdir\=./.gem.20251224-47618-2hvtmy clean
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/debug-1.11.0/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-ogak65 sitelibdir\=./.gem.20251212-20418-ogak65
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-2hvtmy sitelibdir\=./.gem.20251224-47618-2hvtmy
 compiling debug.c
 compiling iseq_collector.c
 linking shared-object debug/debug.so
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/debug-1.11.0/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-ogak65 sitelibdir\=./.gem.20251212-20418-ogak65 install
-/usr/bin/install -c -m 0755 debug.so ./.gem.20251212-20418-ogak65/debug
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-2hvtmy sitelibdir\=./.gem.20251224-47618-2hvtmy install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20251224-47618-2hvtmy/debug
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/debug-1.11.0/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-ogak65 sitelibdir\=./.gem.20251212-20418-ogak65 clean
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-2hvtmy sitelibdir\=./.gem.20251224-47618-2hvtmy clean

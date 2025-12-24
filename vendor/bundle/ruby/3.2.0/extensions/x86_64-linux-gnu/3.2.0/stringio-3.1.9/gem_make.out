@@ -4,16 +4,16 @@ checking for rb_io_mode_t in ruby/io.h... no
 creating Makefile
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/stringio-3.1.9/ext/stringio
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-z7r9pc sitelibdir\=./.gem.20251212-20418-z7r9pc clean
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-f7qoxt sitelibdir\=./.gem.20251224-47618-f7qoxt clean
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/stringio-3.1.9/ext/stringio
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-z7r9pc sitelibdir\=./.gem.20251212-20418-z7r9pc
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-f7qoxt sitelibdir\=./.gem.20251224-47618-f7qoxt
 compiling stringio.c
 linking shared-object stringio.so
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/stringio-3.1.9/ext/stringio
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-z7r9pc sitelibdir\=./.gem.20251212-20418-z7r9pc install
-/usr/bin/install -c -m 0755 stringio.so ./.gem.20251212-20418-z7r9pc
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-f7qoxt sitelibdir\=./.gem.20251224-47618-f7qoxt install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20251224-47618-f7qoxt
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/stringio-3.1.9/ext/stringio
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-z7r9pc sitelibdir\=./.gem.20251212-20418-z7r9pc clean
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-f7qoxt sitelibdir\=./.gem.20251224-47618-f7qoxt clean

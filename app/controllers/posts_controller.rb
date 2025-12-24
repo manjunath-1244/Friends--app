@@ -3,7 +3,10 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :destroy]
 
   def index
-    @posts = Post.includes(:user).order(created_at: :desc)
+    # binding.pry
+    @posts = Post.all
+    @count = Post.count
+    
   end
 
   def show

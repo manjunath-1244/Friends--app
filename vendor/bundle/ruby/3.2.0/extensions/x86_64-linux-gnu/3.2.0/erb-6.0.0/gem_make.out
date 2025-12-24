@@ -4,16 +4,16 @@ checking for rb_ext_ractor_safe() in ruby.h... yes
 creating Makefile
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/erb-6.0.0/ext/erb/escape
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-t07d8 sitelibdir\=./.gem.20251212-20418-t07d8 clean
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-f4zc5p sitelibdir\=./.gem.20251224-47618-f4zc5p clean
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/erb-6.0.0/ext/erb/escape
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-t07d8 sitelibdir\=./.gem.20251212-20418-t07d8
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-f4zc5p sitelibdir\=./.gem.20251224-47618-f4zc5p
 compiling escape.c
 linking shared-object erb/escape.so
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/erb-6.0.0/ext/erb/escape
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-t07d8 sitelibdir\=./.gem.20251212-20418-t07d8 install
-/usr/bin/install -c -m 0755 escape.so ./.gem.20251212-20418-t07d8/erb
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-f4zc5p sitelibdir\=./.gem.20251224-47618-f4zc5p install
+/usr/bin/install -c -m 0755 escape.so ./.gem.20251224-47618-f4zc5p/erb
 
 current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/erb-6.0.0/ext/erb/escape
-make DESTDIR\= sitearchdir\=./.gem.20251212-20418-t07d8 sitelibdir\=./.gem.20251212-20418-t07d8 clean
+make DESTDIR\= sitearchdir\=./.gem.20251224-47618-f4zc5p sitelibdir\=./.gem.20251224-47618-f4zc5p clean
