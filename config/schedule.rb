@@ -23,7 +23,7 @@ set :output, "log/cron.log"
 
 set :job_template, "/bin/bash -l -c ':job'"
 
-every 1.day, at: '10:30 am' do
+every 1.day, at: '3:25 pm' do
   command %Q(
     cd /home/bitcot/Documents/friends &&
     ~/.rvm/gems/ruby-3.2.3@friends/wrappers/ruby -S bundle exec rails runner AdminReportService.send_reports

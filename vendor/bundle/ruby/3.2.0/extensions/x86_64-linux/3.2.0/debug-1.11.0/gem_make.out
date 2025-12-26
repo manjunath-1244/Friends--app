@@ -1,0 +1,19 @@
+current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/debug-1.11.0/ext/debug
+/home/bitcot/.rvm/rubies/ruby-3.2.3/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20251226-7321-cd7t5y sitelibdir\=./.gem.20251226-7321-cd7t5y clean
+
+current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20251226-7321-cd7t5y sitelibdir\=./.gem.20251226-7321-cd7t5y
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20251226-7321-cd7t5y sitelibdir\=./.gem.20251226-7321-cd7t5y install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20251226-7321-cd7t5y/debug
+
+current directory: /home/bitcot/Documents/friends/vendor/bundle/ruby/3.2.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20251226-7321-cd7t5y sitelibdir\=./.gem.20251226-7321-cd7t5y clean

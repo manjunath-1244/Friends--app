@@ -1,24 +1,38 @@
-<h2>Posts</h2>
-<h2> Post Count: <%= @count %> </h2>
+<h2>All Posts</h2>
+<br>
 
-<%= link_to "Create Post", new_post_path, class: "btn btn-success mb-3" %>
+<h2>Post Count: <%= @count %></h2>
+<br>
+
+<%= button_to "Export Posts CSV",
+              admin_exports_posts_path,
+              method: :post,
+              class: "btn btn-success" %>
+
+<br>
+
+<%= link_to "Create Post",
+            new_post_path,
+            class: "btn btn-success mb-3" %>
 
 <% @posts&.each do |post| %>
   <div class="card mb-3">
     <div class="card-body">
       <strong><%= post.user.email %></strong>
+
       <p><%= post.content %></p>
 
-      <%= link_to "View", post_path(post), class: "btn btn-sm btn-primary" %>
+      <%= link_to "View",
+                  post_path(post),
+                  class: "btn btn-sm btn-primary" %>
 
-     <% if current_user == post.user || current_user.admin? %>
-    <%= button_to "Delete",
-      post_path(post),
-      method: :delete,
-      data: { confirm: "Delete this post?" },
-      class: "btn btn-danger btn-sm" %>
-<% end %>            
-
+      <% if current_user == post.user || current_user.admin? %>
+        <%= button_to "Delete",
+                      post_path(post),
+                      method: :delete,
+                      data: { confirm: "Delete this post?" },
+                      class: "btn btn-danger btn-sm" %>
+      <% end %>
     </div>
   </div>
 <% end %>

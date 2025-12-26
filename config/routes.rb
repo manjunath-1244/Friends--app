@@ -4,6 +4,12 @@ Rails.application.routes.draw do
   # end
   namespace :admin do
     get "dashboard", to: "dashboard#index"
+
+    get "exports", to: "exports#index"
+
+    post "exports/friends", to: "exports#friends"
+    post "exports/posts",   to: "exports#posts"
+
   end
 
   resources :posts do
