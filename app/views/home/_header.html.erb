@@ -5,17 +5,17 @@
     <div class="ms-auto d-flex align-items-center">
       <% if user_signed_in? %>
 
-        <% if current_user.admin? %>
+        <!--<% if current_user.admin? %>
           <%= link_to "Admin Dashboard",
                 admin_dashboard_path,
                 class: "nav-link me-3 fw-semibold text-danger" %>
-        <% end %>
+        <% end %> -->
 
-        <h6> Welcome, <%= current_user.email %> </h6>
+        <h4> Welcome: <%= current_user.email %> </h4> 
 
-        <%= link_to "Create Friend",
+        <!--<%= link_to "Create Friend",
               new_friend_path,
-              class: "btn btn-primary me-2" %>
+              class: "btn btn-primary me-2" %> -->
 
         <%= button_to "Logout",
               destroy_user_session_path,

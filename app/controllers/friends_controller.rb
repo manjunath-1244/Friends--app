@@ -3,11 +3,6 @@ class FriendsController < ApplicationController
   before_action :set_friend, only: [:show, :edit, :update, :destroy]
 
 
-  
-
-
-  
-
   def index
   @friends =
     if current_user.admin?
@@ -24,7 +19,7 @@ class FriendsController < ApplicationController
     )
   end
 
-  @friends = @friends.page(params[:page]).per(10)
+  @friends = @friends.page(params[:page]).per(5)
   end
 
 

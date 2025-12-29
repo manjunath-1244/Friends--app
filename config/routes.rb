@@ -12,6 +12,13 @@ Rails.application.routes.draw do
 
   end
 
+  namespace :api do
+  namespace :v1 do
+    resources :friends, only: [:index, :show], defaults: { format: :json }
+  end
+end
+
+
   resources :posts do
     resources :comments, only: [:create, :edit, :update, :destroy]
   end

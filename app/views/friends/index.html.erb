@@ -1,16 +1,29 @@
 <div class="mb-3">
   <%= link_to "Create Post", new_post_path, class: "btn btn-success me-2" %>
+
+  <%= link_to "Create Friend",
+              new_friend_path,
+              class: "btn btn-primary me-2" %>
+
+                
   <%= link_to "View Posts", posts_path, class: "btn btn-primary" %>
 
- <!--<% if current_user.admin? %>
+ <% if current_user.admin? %>
     <%= link_to "Admin Dashboard",
         admin_dashboard_path,
         class: "btn btn-dark ms-2" %>
-  <% end %> -->
-</div>
+  <% end %>
 
+  
+</div>
+          
 <h2>My Friends</h2>
+<%= button_to "Export Friends CSV",
+      admin_exports_friends_path,
+      method: :post,
+      class: "btn btn-primary me-2" %>
 <%= form_with url: friends_path, method: :get, local: true, class: "mb-3" do %>
+  <br>
   <div class="input-group">
     <%= text_field_tag :query,
           params[:query],
