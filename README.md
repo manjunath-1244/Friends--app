@@ -1,10 +1,4 @@
-Below is a **clean, professional, production-ready `README.md`** you can **directly copy-paste into your GitHub repository**.
-It is written in a way that **managers, teammates, and interviewers** can all understand.
-
----
-
-````md
-# 📌 Friends App
+📌 Friends App
 
 Friends App is a full-featured Ruby on Rails application that demonstrates real-world backend development concepts such as authentication, authorization, admin workflows, background jobs, scheduled tasks, CSV exports, and API exposure using Jbuilder.
 
@@ -225,7 +219,7 @@ rails generate controller api/v1/friends index show
 
 ---
 
-## 🎨 UI Styling (Learning Phase)
+## 🎨 UI Styling
 
 * Explored Bootstrap integration with Rails
 * Learned asset pipeline, SCSS, and JS bundling
@@ -311,7 +305,6 @@ http://localhost:3000
 ## 🤝 Author
 
 Kondabathini Manjunath
-Ruby on Rails Developer
 
 ---
 
