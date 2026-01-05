@@ -1,4 +1,6 @@
+# Loads Ruby’s built-in CSV library
 require "csv" 
+
 class ExportPostsJob < ApplicationJob
   queue_as :default
 

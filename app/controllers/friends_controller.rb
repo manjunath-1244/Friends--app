@@ -3,13 +3,14 @@ class FriendsController < ApplicationController
   before_action :set_friend, only: [:show, :edit, :update, :destroy]
 
 
-  def index
+def index
   @friends =
-    if current_user.admin?
-      Friend.all
+     if current_user.admin?
+      @friends = Friend.all
     else
-      current_user.friends
+      @friends = current_user.friends
     end
+    
 
   if params[:query].present?
     search = "%#{params[:query]}%"
@@ -34,13 +35,18 @@ class FriendsController < ApplicationController
   def create
     
     @friend = current_user.friends.build(friend_params)
-
     if @friend.save
-      
-      redirect_to friends_path, notice: "Friend added successfully."
+      render :show, status: :created
     else
-      render :new, status: :unprocessable_entity
+      render json: { errors: @friend.errors.full_messages }, status: :unprocessable_entity
     end
+
+    # if @friend.save
+      
+    #   redirect_to friends_path, notice: "Friend added successfully."
+    # else
+    #   render :new, status: :unprocessable_entity
+    # end
   end
 
   def edit

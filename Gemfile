@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 gem 'devise'
-
-gem "kaminari"
+gem "devise-jwt"
+gem "kaminari"  
 gem "pry-rails"
 # group :development do
 #   gem 'letter_opener'
@@ -73,6 +73,11 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+end
+
+group :development, :test do
+  gem "rspec-rails"
+  gem "factory_bot_rails"
 end
 
 # gem "bootstrap", "~> 5.3"

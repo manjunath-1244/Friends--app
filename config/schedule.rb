@@ -23,9 +23,13 @@ set :output, "log/cron.log"
 
 set :job_template, "/bin/bash -l -c ':job'"
 
-every 1.day, at: '3:25 pm' do
+every 1.day, at: '11:05 am' do
+# every 5.minutes do
   command %Q(
     cd /home/bitcot/Documents/friends &&
-    ~/.rvm/gems/ruby-3.2.3@friends/wrappers/ruby -S bundle exec rails runner AdminReportService.send_reports
+    /home/bitcot/.rvm/gems/ruby-3.2.3@friends/wrappers/ruby -S bundle exec rails runner "AdminReportService.send_reports"
   )
 end
+
+
+# bundle exec whenever --update-crontab

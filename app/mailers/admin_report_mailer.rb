@@ -1,5 +1,5 @@
 class AdminReportMailer < ApplicationMailer
-  default from: "no-reply@friendsapp.com"
+  default from: "manjunath@bitcot.com"
 
   def daily_report(admin)
     @admin = admin
@@ -9,7 +9,9 @@ class AdminReportMailer < ApplicationMailer
 
     mail(
       to: @admin.email,
-      subject: "Daily Application Activity Report"
+      subject: "Hi your Application Activity Report"
     )
   end
 end
+
+# Cron Job
