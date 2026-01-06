@@ -3,6 +3,22 @@
 
 <h2>Post Count: <%= @count %></h2>
 <br>
+<%= form_with url: posts_path, method: :get, local: true do %>
+  <%= text_field_tag :query, params[:query], placeholder: "Search posts..." %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<hr>
+
+<!--<% @posts.each do |post| %>
+  <p><%= post.content %></p>
+  <small>By User ID: <%= post.user_id %></small>
+  <hr>
+<% end %>-->
+
+
+
+
 
 <%= button_to "Export Posts CSV",
               admin_exports_posts_path,

@@ -10,13 +10,17 @@ class Friend < ApplicationRecord
             format: { with: URI::MailTo::EMAIL_REGEXP },
             uniqueness: { scope: :user_id }
     # callback
-  after_commit :send_friend_added_email, on: :create
+  # after_commit :send_friend_added_email, on: :create
+  after_create_commit :send_friend_added_email
 
   private
 
+  # def send_friend_added_email
+    
+  #   FriendMailer.friend_added(user, self).deliver_now
+    
+  # end
   def send_friend_added_email
-    
-    FriendMailer.friend_added(user, self).deliver_now
-    
+    FriendMailer.friend_added(user, self).deliver_later
   end
 end

@@ -6,6 +6,7 @@ gem "pry-rails"
 # group :development do
 #   gem 'letter_opener'
 # end
+gem 'pg_search'
 gem "whenever", require: false
 group :development, :test do
   gem 'dotenv-rails'

@@ -7,15 +7,13 @@ Rails.application.routes.draw do
 #   sessions: "users/sessions"
 # }
 
-  namespace :admin do
-    get "dashboard", to: "dashboard#index"
+ namespace :admin do
+  get "dashboard", to: "dashboard#index"
 
-    get "exports", to: "exports#index"
-
-    get "exports/friends", to: "exports#friends"
-    get "exports/posts",   to: "exports#posts"
-
-  end
+  get  "exports",         to: "exports#index"
+  post "exports/friends", to: "exports#friends"
+  post "exports/posts",   to: "exports#posts"
+end
 
   namespace :api do
     namespace :v1 do

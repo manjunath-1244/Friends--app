@@ -4,9 +4,17 @@ class PostsController < ApplicationController
 
   def index
     # binding.pry
+  
     @posts = Post.all
     @count = Post.count
-    
+
+
+    if params[:query].present?
+      @posts = Post.search_by_content(params[:query])
+    else
+      @posts = Post.all
+    end
+    # @posts = @posts.page(params[:page]).per(5)
   end
 
   def show
