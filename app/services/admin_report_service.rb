@@ -5,3 +5,6 @@ class AdminReportService
     end
   end
 end
+
+# Cron Job
+# logic to send daily reports to the admin

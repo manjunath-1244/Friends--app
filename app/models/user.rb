@@ -5,29 +5,18 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :jwt_authenticatable,
           jwt_revocation_strategy: JwtDenylist
 
+  # Associations
   has_many :friends, dependent: :destroy
-
   has_many :posts, dependent: :destroy
   has_many :comments, dependent: :destroy
 
-#   def friends_with?(other_user)
-#   friends.exists?(id: other_user.id)
-# end
 
-    # devise :database_authenticatable,
-    #      :registerable,
-    #      :jwt_authenticatable,
-    #      jwt_revocation_strategy: JwtDenylist
-
-
-
-
+# Role check method for admin
   def admin?
     role == "admin"
   end
 
-
-  
+  # Full name method for user display 
   def full_name
     first_name.presence || email
   end

@@ -92,6 +92,8 @@ config.action_mailer.default_url_options = {
   port: 3000
 }
 
+
+# gmail settings
 # config.action_mailer.smtp_settings = {
 #   address: "smtp.gmail.com",
 #   port: 587,
@@ -102,18 +104,47 @@ config.action_mailer.default_url_options = {
 #   enable_starttls_auto: true
 # }
 
+
+# sendgrid settings
+# config.action_mailer.delivery_method = :smtp
+
+# config.action_mailer.smtp_settings = {
+#   address: "smtp.sendgrid.net",
+#   port: 587,
+#   authentication: :plain,
+#   user_name: "apikey",        # literally "apikey"
+#   password: ENV["SENDGRID_API_KEY"],
+#   domain: "localhost",
+#   enable_starttls_auto: true
+# }
+
+
+# mailcatcher settings
 config.action_mailer.delivery_method = :smtp
 
 config.action_mailer.smtp_settings = {
-  address: "smtp.sendgrid.net",
-  port: 587,
-  authentication: :plain,
-  user_name: "apikey",        # literally "apikey"
-  password: ENV["SENDGRID_API_KEY"],
-  domain: "localhost",
-  enable_starttls_auto: true
+  address: "localhost",
+  port: 1025
 }
 
+config.action_mailer.perform_deliveries = true
+config.action_mailer.raise_delivery_errors = false
 
+# http://127.0.0.1:1080/
 
 end
+
+
+# If MailCatcher is configured in development.rb, then:
+
+# Emails go only to MailCatcher
+
+# Real emails will NOT be sent
+
+# To send real emails from development, you must:
+
+# Disable MailCatcher configuration
+
+# Enable SendGrid SMTP settings
+
+# That usually means commenting out MailCatcher code.

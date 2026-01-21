@@ -25,7 +25,7 @@ def index
 
 
   def show
-    # @friend is already set by set_friend
+    # @friend is set by set_friend
   end
 
   def new
@@ -41,12 +41,7 @@ def index
       render json: { errors: @friend.errors.full_messages }, status: :unprocessable_entity
     end
 
-    # if @friend.save
-      
-    #   redirect_to friends_path, notice: "Friend added successfully."
-    # else
-    #   render :new, status: :unprocessable_entity
-    # end
+    
   end
 
   def edit
